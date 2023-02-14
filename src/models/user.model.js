@@ -21,8 +21,8 @@ const UserSchema = new Schema({
         minLength: 6
 },
     role: {
-        type: String,
-        required: true
+        type: Schema.Types.ObjectId,
+        ref: 'role'
     }
 
 });
