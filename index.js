@@ -3,6 +3,7 @@ const app = express();
 const cors = require('cors');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+const { createRoles, createAdmin } = require('./src/libs/initialSetup');
 
 require('dotenv').config();
 // eslint-disable-next-line no-undef
